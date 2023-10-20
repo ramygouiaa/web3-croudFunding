@@ -13,10 +13,11 @@ module.exports = {
   },
   networks: {
     zksync_testnet: {
-      url: "https://zksync2-testnet.zksync.dev",
-      ethNetwork: "goerli",
-      chainId: 280,
+      url: "https://rpc.ankr.com/eth_sepolia",
+      ethNetwork: "sepolia",
+      chainId: 11155111,
       zksync: true,
+      accounts: ["0x67a47f2e2ab188abc249fe795fcad8edc52b9102c401cc5b1f687014232e5d30"]
     },
     zksync_mainnet: {
       url: "https://zksync2-mainnet.zksync.io/",
