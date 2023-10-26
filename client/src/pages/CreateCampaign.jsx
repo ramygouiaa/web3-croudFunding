@@ -19,11 +19,14 @@ const CreateCampaign = () => {
     image: ''
   })
 
+  //updates the form
   const handleFormFieldChange = (fieldName, e) => {
     setForm({...form, [fieldName]: e.target.value})
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(form);
 
   }
 
