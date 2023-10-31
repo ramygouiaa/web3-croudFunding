@@ -20,7 +20,6 @@ export const App = () => {
           <Route path="/create-campaign" element={<CreateCampaign />} />
           <Route path="/Campaign-details/:id" element={<CampaignDetails />} /> 
         </Routes>
-
       </div>
     </div>
   )
