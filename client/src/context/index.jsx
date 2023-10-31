@@ -23,7 +23,7 @@ export const StateContextProvider = ({ children }) => {
 					form.target,
 					new Date(form.deadline).getTime(), // deadline,
 					form.image,
-				]
+				],
 			});
 
       console.log("contract call success", data)
