@@ -5,9 +5,10 @@ import { FundCard } from '../components';
 
 const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
     const navigate = useNavigate()
+    const totalUserCampaigns = campaigns.length
 
-    const handleNavigate = (campaign) => {
-        navigate(`/campaign-details/${campaign.title}`, { state: campaign })
+    const handleNavigate = (campaign, totalUserCampaign) => {
+        navigate(`/campaign-details/${campaign.title}`, { state: {...campaign, totalUserCampaigns } })
       }
 
     return (
@@ -29,7 +30,7 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
                     <FundCard
                         key={campaign.pId}
                         {...campaign}
-                        handleClick={() => handleNavigate(campaign)}
+                        handleClick={() => handleNavigate(campaign, totalUserCampaigns)}
                     />
                 ))}
 
