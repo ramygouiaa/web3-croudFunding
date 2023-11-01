@@ -23,7 +23,7 @@ const CampaignDetails = () => {
     const data = await getDonations(state.pId);
 
     setDonators(data);
-  }
+  } 
 
   useEffect(() => {
     if(contract) fetchDonators();
