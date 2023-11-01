@@ -7,7 +7,7 @@ const Profile = () => {
   const  [isLoading, setIsLoading] = useState(false)
   const  [campaigns, setCampaigns] = useState([])
 
-  const {address, contract, getCampaigns, getUserCampaigns} = useStateContext()
+  const {address, contract, getUserCampaigns} = useStateContext()
 
   const fetchCampaigns = async () => {
     setIsLoading(true)
