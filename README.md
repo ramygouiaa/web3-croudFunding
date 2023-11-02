@@ -1,5 +1,9 @@
 # web3-crowdfunding
-Crowdfunding platform running on the Sepolia Network
+Crowdfunding platform running on the Sepolia Network. 
+
+this is a React.js project initiated using Vite Dev tool. It is implemented using Thirdweb web3 Development framework. It facilitates and speeds up web3 application development, alongside allowing an IPFS deployment of your build. For more Info, see links below
+Vite: https://vitejs.dev/
+Thirdweb: https://thirdweb.com/
 
 # Usage
 
