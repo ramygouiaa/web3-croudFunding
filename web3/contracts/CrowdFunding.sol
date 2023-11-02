@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-contract Crowdfunfing {
+contract Crowdfunding {
     constructor() {}
 
     struct Campaign {
